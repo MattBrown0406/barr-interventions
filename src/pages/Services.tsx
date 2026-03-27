@@ -83,6 +83,11 @@ const Services = () => (
                 {service.content.map((p, j) => (
                   <p key={j} className="text-muted-foreground leading-relaxed">{p}</p>
                 ))}
+                {service.link && (
+                  <Link to={service.link} className="inline-block text-primary font-heading text-sm tracking-widest hover:opacity-80 transition-opacity mt-2">
+                    Learn More →
+                  </Link>
+                )}
                 {service.subsections?.map((sub, k) => (
                   <div key={k} className="ml-4 pl-4 border-l-2 border-primary/30">
                     <h3 className="font-heading text-lg text-foreground tracking-wider mb-2">{sub.title}</h3>
