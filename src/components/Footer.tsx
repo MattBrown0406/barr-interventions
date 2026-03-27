@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import { Phone } from "lucide-react";
+import barrLogoWhite from "@/assets/barr-logo-white.png";
 
 const Footer = () => (
   <footer className="bg-primary text-primary-foreground py-12 px-6 md:px-12">
     <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
       <div>
-        <h3 className="font-heading text-xl tracking-wider mb-4">Barr Interventions & Consulting</h3>
+        <img src={barrLogoWhite} alt="Barr Interventions & Consulting" className="h-16 w-auto mb-4" />
         <p className="text-sm opacity-80 leading-relaxed">
           Devoted to helping individuals and families regain their lives amidst struggles with drugs and alcohol.
         </p>
