@@ -44,6 +44,14 @@ const services = [
       "Pre and post intervention and treatment, Barr works with individuals and their families to offer education around addiction and mental health disorders; share connections to resources and tools for coping; collaborate on treatment provider vetting, intake, and initiation; and consult on discharge plans for long-term success.",
     ],
   },
+  {
+    title: "K9 Substance Detection",
+    content: [
+      "Barr offers professional K9 drug detection sweeps for homes, businesses, and treatment provider residences. Our certified detection dog is trained to identify illicit substances including fentanyl, opioids, methamphetamine, cocaine, heroin, MDMA, and marijuana.",
+      "Whether you're a concerned parent, a business owner, or a treatment facility ensuring a substance-free environment, Barr's K9 detection service provides discreet, thorough, and reliable sweeps to give you peace of mind.",
+    ],
+    link: "/k9-detection",
+  },
 ];
 
 const Services = () => (
