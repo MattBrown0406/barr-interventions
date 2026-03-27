@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import founderImage from "@/assets/founder-portrait.jpg";
+import katieBarr from "@/assets/katie-barr.jpg";
 
 const About = () => (
   <Layout>
@@ -19,8 +19,8 @@ const About = () => (
         </div>
         <div>
           <img
-            src={founderImage}
-            alt="Barr Interventions founder"
+            src={katieBarr}
+            alt="Katie Barr, founder of Barr Interventions & Consulting"
             className="rounded shadow-lg w-full max-w-md mx-auto"
             loading="lazy"
             width={800}
