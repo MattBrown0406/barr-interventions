@@ -30,7 +30,7 @@ const Index = () => (
     <section className="py-20 px-6 md:px-12 max-w-4xl mx-auto text-center">
       <h1 className="font-heading text-2xl md:text-3xl text-primary tracking-wider mb-4">Texas Based Compassionate Addiction Intervention Services</h1>
       <p className="text-lg leading-relaxed text-muted-foreground">
-        Barr Interventions & Consulting is devoted to helping individuals and families regain their lives amidst struggles with drugs and alcohol through interventions and consulting. Serving clients across Texas, Oklahoma, and Louisiana, services encompass sober transport, case management, client and family advocacy, companionship, and coaching as it relates to recovery from substance use.
+        Barr Interventions & Consulting is devoted to helping individuals and families regain their lives amidst struggles with drugs and alcohol through interventions and consulting. Serving clients nationwide, services encompass sober transport, case management, client and family advocacy, companionship, and coaching as it relates to recovery from substance use.
       </p>
     </section>
 
