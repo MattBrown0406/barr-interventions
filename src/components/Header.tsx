@@ -6,6 +6,7 @@ import barrLogo from "@/assets/barr-logo.png";
 const navLinks = [
   { label: "About", path: "/about" },
   { label: "Services", path: "/services" },
+  { label: "K9 Detection", path: "/k9-detection" },
   { label: "Coaching", path: "/coaching" },
   { label: "Contact", path: "/contact" },
 ];
