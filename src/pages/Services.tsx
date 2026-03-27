@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
-import founderImage from "@/assets/founder-portrait.jpg";
+import katieBarr from "@/assets/katie-barr.jpg";
 
 const services = [
   {
@@ -58,9 +58,9 @@ const Services = () => (
             </p>
           </div>
           <img
-            src={founderImage}
-            alt="Barr Interventions team"
-            className="rounded shadow-lg w-full max-w-sm mx-auto"
+            src={katieBarr}
+            alt="Katie Barr, Interventions & Consulting"
+            className="rounded shadow-lg w-full max-w-sm mx-auto object-cover"
             loading="lazy"
             width={800}
             height={1000}

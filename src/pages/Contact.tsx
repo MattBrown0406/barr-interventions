@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import ContactForm from "@/components/ContactForm";
-import founderImage from "@/assets/founder-portrait.jpg";
+import katieBarr from "@/assets/katie-barr.jpg";
 import paperTexture from "@/assets/paper-texture.jpg";
 
 const Contact = () => (
@@ -12,7 +12,7 @@ const Contact = () => (
           <p className="text-muted-foreground leading-relaxed mb-8">
             Thank you for your interest in Barr Interventions & Consulting. Please complete this form and a member of the team will follow up within 24 hours.
           </p>
-          <img src={founderImage} alt="Barr team" className="rounded shadow-lg w-full max-w-sm" loading="lazy" width={800} height={1000} />
+          <img src={katieBarr} alt="Katie Barr" className="rounded shadow-lg w-full max-w-sm" loading="lazy" width={800} height={1000} />
         </div>
         <div>
           <ContactForm />

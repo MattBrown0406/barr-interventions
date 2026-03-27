@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Coaching from "./pages/Coaching";
 import Contact from "./pages/Contact";
+import K9Detection from "./pages/K9Detection";
 import CityPage from "./pages/CityPage";
 import NotFound from "./pages/NotFound";
 
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/coaching" element={<Coaching />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/k9-detection" element={<K9Detection />} />
           <Route path="/services/:citySlug" element={<CityPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
