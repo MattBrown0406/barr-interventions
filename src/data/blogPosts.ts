@@ -1,0 +1,127 @@
+export interface BlogPost {
+  slug: string;
+  title: string;
+  excerpt: string;
+  date: string;
+  author: string;
+  category: string;
+  readTime: string;
+  content: string[];
+}
+
+export const blogPosts: BlogPost[] = [
+  {
+    slug: "what-to-expect-during-an-intervention",
+    title: "What to Expect During a Professional Intervention",
+    excerpt: "An intervention can feel overwhelming for families. Understanding the process helps remove fear and empowers loved ones to take the first step toward healing.",
+    date: "2026-03-15",
+    author: "Katie Barr, CIP",
+    category: "Intervention",
+    readTime: "7 min read",
+    content: [
+      "When a family decides to hold an intervention, it is often after months or even years of watching someone they love struggle with addiction. The decision itself is an act of courage. But courage does not eliminate fear, and many families arrive at this moment feeling uncertain about what lies ahead.",
+      "A professional intervention is not a confrontation. It is a carefully planned, compassionately facilitated conversation designed to help an individual see the impact of their substance use on themselves and the people around them. The interventionist serves as a neutral guide—someone who understands addiction, knows how to navigate emotional volatility, and can keep the conversation moving toward a constructive outcome.",
+      "Preparation is the most critical phase. Before the intervention takes place, the interventionist meets with the family—sometimes multiple times—to understand the situation, identify dynamics that could derail the conversation, and help each participant write a letter. These letters are not accusatory. They are expressions of love, concern, and specific examples of how the individual's substance use has affected the relationship.",
+      "On the day of the intervention, the family gathers in a private, comfortable setting. If the intervention is invitational, the individual has agreed to attend a meeting, though they may not know the full nature of it. If it is a surprise intervention, the individual arrives to find their loved ones waiting. In both cases, the interventionist opens the conversation, sets ground rules, and creates a space where honesty can exist without hostility.",
+      "Each family member reads their letter. The room is often emotional—tears, shaking hands, wavering voices. But the letters ground the conversation in specifics rather than generalizations. Instead of saying 'you have a problem,' a parent might say, 'Last Thanksgiving, you missed dinner because you were using, and your daughter asked me why you did not come.' These moments of truth are what break through denial.",
+      "After the letters are read, the interventionist presents a treatment plan that has already been arranged. A bed at a treatment facility is reserved, a bag is packed, and transportation is ready. The goal is to remove every barrier between the individual and getting help. When someone says yes—and the majority do—the interventionist accompanies them to treatment that same day.",
+      "For families, the intervention does not end when their loved one enters treatment. The interventionist continues to serve as a resource, helping the family understand what to expect during treatment, how to set boundaries, and how to begin their own healing process. Addiction is a family disease, and recovery must be a family effort.",
+      "If you are considering an intervention for someone you love, know that you do not have to navigate this alone. A professional interventionist has walked this road hundreds of times and can guide your family through it with dignity, compassion, and expertise.",
+    ],
+  },
+  {
+    slug: "signs-a-loved-one-may-need-an-intervention",
+    title: "5 Signs a Loved One May Need an Intervention",
+    excerpt: "Recognizing when someone has crossed the line from casual use to addiction is not always straightforward. These five warning signs can help families identify when professional help is needed.",
+    date: "2026-03-01",
+    author: "Katie Barr, CIP",
+    category: "Family Support",
+    readTime: "5 min read",
+    content: [
+      "Addiction rarely announces itself. It creeps in gradually, disguising itself behind excuses, social norms, and the deep human desire to believe that everything is fine. For families, the line between 'they are going through a rough patch' and 'they need help' can be agonizingly unclear.",
+      "The first sign is a noticeable change in priorities. When someone begins prioritizing substance use over responsibilities they once valued—missing work, skipping family events, neglecting hygiene—it signals that the substance has moved from the periphery of their life to the center. This shift often happens slowly enough that it takes an outsider or a moment of clarity to see the full picture.",
+      "The second sign is escalating secrecy. Addiction thrives in isolation. If a loved one has become increasingly private about their whereabouts, their finances, or their social circle, it may indicate they are hiding the extent of their use. Finding hidden bottles, discovering unexplained charges, or noticing that they become defensive when asked simple questions are all red flags.",
+      "Third, watch for physical and emotional changes. Rapid weight loss or gain, bloodshot eyes, tremors, mood swings, paranoia, or prolonged periods of lethargy are physiological markers of substance abuse. Mental health often deteriorates alongside addiction, creating a cycle where someone uses substances to cope with the very problems the substances are causing.",
+      "The fourth sign is failed attempts to stop. Many people struggling with addiction have tried to quit on their own—sometimes multiple times. If your loved one has made promises to cut back or stop entirely and has been unable to follow through, it is not a failure of willpower. It is evidence that the addiction has progressed to a point where professional intervention is needed.",
+      "Finally, the fifth sign is the impact on relationships. When addiction begins damaging marriages, parent-child bonds, friendships, and professional connections, the consequences are no longer theoretical. If family gatherings have become tense, if trust has eroded, if arguments about substance use have become routine, the disease is affecting everyone—not just the individual using.",
+      "Recognizing these signs is painful, but it is also the beginning of change. An intervention does not have to wait until someone hits rock bottom. In fact, the purpose of a professional intervention is to raise the bottom—to help someone see the trajectory of their choices before the consequences become irreversible.",
+      "If you recognize these signs in someone you love, reaching out to a professional interventionist is a confidential first step. You do not need to have all the answers. You just need the willingness to ask for help.",
+    ],
+  },
+  {
+    slug: "role-of-sober-coaching-in-long-term-recovery",
+    title: "The Role of Sober Coaching in Long-Term Recovery",
+    excerpt: "Treatment is the beginning of recovery, not the end. Sober coaching bridges the gap between structured treatment and independent, sustained sobriety.",
+    date: "2026-02-15",
+    author: "Katie Barr, CIP",
+    category: "Recovery",
+    readTime: "6 min read",
+    content: [
+      "Completing a treatment program is a significant achievement, but it is not the finish line. The real challenge of recovery begins when someone returns to the world they left behind—the same environment, the same triggers, the same relationships. Without adequate support, the gap between treatment and sustained sobriety can feel like a chasm.",
+      "This is where sober coaching becomes essential. A sober coach is not a therapist, a sponsor, or a friend—though elements of each may be present in the relationship. A sober coach is a trained professional who walks alongside someone in early recovery, helping them navigate the practical realities of building a sober life.",
+      "The work of sober coaching is deeply individualized. For one person, it might mean accompanying them to job interviews and helping them practice how to explain a gap in their résumé. For another, it might involve creating a structured daily routine that includes exercise, meetings, and healthy meals. For someone else, it could mean traveling together to a wedding or family event where alcohol will be present, providing real-time support in a high-risk situation.",
+      "One of the most important functions of a sober coach is accountability without judgment. In early recovery, the temptation to isolate, skip meetings, or fall back into old patterns is constant. A sober coach provides a consistent, non-judgmental presence that keeps someone connected to their recovery goals. They are someone to call at 2 a.m. when cravings hit, someone to sit with during the loneliness that often accompanies the first months of sobriety.",
+      "Sober coaching also addresses the practical life skills that addiction often erodes. Managing finances, maintaining a living space, navigating public transportation, cooking meals, establishing a sleep schedule—these tasks that most people take for granted can feel overwhelming to someone who has spent years in active addiction. A sober coach helps rebuild these competencies, fostering the self-efficacy that is crucial for long-term success.",
+      "The duration of sober coaching varies. Some individuals benefit from intensive daily support for the first 30 to 90 days after treatment. Others maintain a coaching relationship for a year or more, gradually reducing the frequency of sessions as their confidence and independence grow. The goal is always the same: to make the coach unnecessary.",
+      "Research consistently shows that the first year of recovery is the highest-risk period for relapse. Having a professional who understands this risk and can provide targeted, real-world support during this critical window can make the difference between sustained recovery and a return to active use.",
+      "If you or a loved one is preparing to leave treatment, or if someone in early recovery is struggling, sober coaching may be the bridge that connects the hope of treatment to the reality of lasting sobriety.",
+    ],
+  },
+  {
+    slug: "how-addiction-affects-the-entire-family",
+    title: "How Addiction Affects the Entire Family",
+    excerpt: "Addiction is often called a family disease because its effects ripple outward, reshaping relationships, communication patterns, and emotional well-being for everyone involved.",
+    date: "2026-02-01",
+    author: "Katie Barr, CIP",
+    category: "Family Support",
+    readTime: "6 min read",
+    content: [
+      "When one person in a family is struggling with addiction, every member of that family is affected. Addiction does not exist in isolation. It reshapes the dynamics of the household, alters communication patterns, and places extraordinary emotional, financial, and psychological burdens on people who may have no idea how to respond.",
+      "Spouses and partners often experience the most direct impact. They may find themselves assuming the role of caretaker, covering for their partner's absences, managing finances alone, and shielding children from the reality of what is happening. Over time, this leads to exhaustion, resentment, and a gradual erosion of the trust that holds the relationship together.",
+      "Children are particularly vulnerable. They may not fully understand what is happening, but they feel the instability. They sense the tension, witness the arguments, and internalize the chaos. Research has shown that children of parents with substance use disorders are more likely to experience anxiety, depression, academic difficulties, and behavioral problems. They are also at higher risk for developing substance use disorders themselves.",
+      "Parents of adult children with addiction face their own unique agony. They oscillate between wanting to help and knowing that enabling is counterproductive. They lie awake wondering if their child is safe. They blame themselves, questioning every parenting decision they ever made. The grief of watching an adult child destroy their life through substance use is a particular kind of pain that few outside the experience can fully understand.",
+      "Siblings often become the forgotten casualties. Attention and resources flow toward the family member with the addiction, leaving brothers and sisters feeling neglected, angry, and guilty for feeling angry. They may withdraw from the family entirely or overcompensate by becoming hyper-responsible, taking on roles and burdens that are not theirs to carry.",
+      "One of the most insidious effects of addiction on families is the normalization of dysfunction. When chaos becomes routine, families develop coping mechanisms that feel necessary in the moment but are ultimately unhealthy. Codependency, enabling, denial, and emotional detachment are survival strategies that, over time, create their own damage.",
+      "Family coaching and liaison services exist precisely because recovery cannot succeed in a vacuum. When a family learns to set boundaries, communicate honestly, and seek their own support, they create an environment where recovery is possible—not just for the individual with the addiction, but for everyone.",
+      "If addiction has disrupted your family, know that help exists. You do not have to wait for a crisis, and you do not have to figure it out alone. A family liaison can help you understand your options, set boundaries that are firm but compassionate, and begin the process of healing—regardless of whether your loved one is ready to seek treatment.",
+    ],
+  },
+  {
+    slug: "understanding-k9-drug-detection-services",
+    title: "Understanding K9 Drug Detection: When and Why Families Use This Service",
+    excerpt: "K9 drug detection sweeps offer families, businesses, and treatment facilities a discreet and reliable way to identify hidden substances and maintain safe environments.",
+    date: "2026-01-20",
+    author: "Katie Barr, CIP",
+    category: "K9 Detection",
+    readTime: "5 min read",
+    content: [
+      "The decision to request a K9 drug detection sweep is never taken lightly. It often comes after a period of suspicion, broken trust, or a specific incident that has raised alarms. For parents, it might be finding paraphernalia in a teenager's room. For a treatment facility, it might be a pattern of positive drug tests among residents. For a business owner, it could be concerns about employee safety.",
+      "K9 drug detection is one of the most effective tools available for identifying hidden substances. A trained detection dog can locate drugs that would be virtually impossible for a human to find—concealed inside walls, buried in clothing, hidden in vehicles, or stashed in places that even thorough manual searches would miss. The canine nose is roughly 10,000 times more sensitive than a human nose, and a well-trained detection dog can identify trace amounts of substances including fentanyl, heroin, cocaine, methamphetamine, MDMA, marijuana, and prescription opioids.",
+      "For families dealing with addiction, a K9 sweep of the home serves multiple purposes. First, it provides objective information. Suspicion and denial often coexist in families affected by addiction, and a detection dog removes ambiguity. Either substances are present or they are not. This clarity can be a catalyst for honest conversation and, ultimately, for seeking professional help.",
+      "Second, a K9 sweep can be a safety measure. Fentanyl—which is now found in an alarming percentage of street drugs—is lethal in microscopic quantities. A family member unknowingly exposed to fentanyl residue on surfaces could face serious health consequences. A detection sweep identifies these risks and allows for proper remediation.",
+      "Treatment facilities and sober living homes use K9 detection services to maintain the integrity of their environments. When residents smuggle substances into a facility, it jeopardizes the recovery of everyone in the program. Regular sweeps serve as both a deterrent and a safeguard, ensuring that the facility remains the safe, substance-free environment it promises to be.",
+      "The process itself is discreet and efficient. The handler and detection dog arrive at the location, and the dog systematically searches the designated areas. If the dog alerts to a location, the handler documents the finding and reports it to the client. The entire process is handled with professionalism and confidentiality.",
+      "Business owners also utilize K9 detection services, particularly in industries where workplace safety is paramount. Construction sites, warehouses, transportation companies, and healthcare facilities all have legitimate reasons to ensure their workplaces are free of illicit substances.",
+      "If you are considering a K9 drug detection sweep for your home, business, or facility, the most important step is making the decision to act. Ignoring suspicions does not make the problem disappear—it allows it to grow. A professional detection service provides answers, and answers are the first step toward solutions.",
+    ],
+  },
+  {
+    slug: "setting-boundaries-with-a-loved-one-in-addiction",
+    title: "How to Set Boundaries with a Loved One in Active Addiction",
+    excerpt: "Boundaries are not about punishment or control. They are about protecting your own well-being while leaving the door open for your loved one to choose recovery.",
+    date: "2026-01-10",
+    author: "Katie Barr, CIP",
+    category: "Family Support",
+    readTime: "6 min read",
+    content: [
+      "Setting boundaries with someone you love who is in active addiction is one of the most difficult things a person can do. Every instinct says to help, to fix, to protect. And yet, the painful truth of addiction is that many of the things that feel like helping are actually enabling—removing consequences, cushioning the fall, and inadvertently giving the disease more room to operate.",
+      "A boundary is not an ultimatum, though it may sound like one. A boundary is a clear statement of what you will and will not accept, paired with a specific consequence if the boundary is crossed. It is not about controlling the other person's behavior. It is about defining what you are willing to tolerate in your own life.",
+      "For example, a boundary might sound like: 'I love you, and I will not have drugs in my home. If I find substances here, I will ask you to leave.' Or: 'I will not lend you money anymore. If you ask, I will say no.' Or: 'I will not cover for you at work or with family. If you miss an event, that is your responsibility to explain.'",
+      "The hardest part of setting boundaries is following through. Addiction will test every boundary you set. The person you love may cry, rage, manipulate, or plead. They may accuse you of not caring. They may threaten self-harm. These responses are the disease talking, and while they are painful to witness, they do not change the fact that the boundary is necessary.",
+      "It is essential to understand that boundaries are not punitive. They are protective. When you stop enabling, you are not abandoning your loved one. You are removing the safety net that allows them to continue using without facing the full weight of their choices. Sometimes, it is only when the consequences become real that someone becomes willing to accept help.",
+      "Family coaching can be invaluable during this process. A professional can help you identify where your boundaries need to be, practice holding them, and process the guilt and grief that inevitably accompany this work. You do not have to figure this out alone, and you should not have to.",
+      "It is also important to take care of yourself. Families affected by addiction often neglect their own well-being in their focus on the person who is using. Attending support groups like Al-Anon, seeing a therapist, maintaining friendships, exercising, and engaging in activities that bring you joy are not selfish acts. They are necessary acts of self-preservation.",
+      "Recovery is possible, and families play a critical role in creating the conditions where recovery can happen. But you cannot recover for someone else. What you can do is set boundaries that protect your own health, model healthy behavior, and be ready—with open arms and a plan—when your loved one is ready to accept help.",
+    ],
+  },
+];
