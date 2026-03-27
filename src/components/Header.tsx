@@ -9,6 +9,7 @@ const navLinks = [
   { label: "K9 Detection", path: "/k9-detection" },
   { label: "Coaching", path: "/coaching" },
   { label: "Locations", path: "/locations" },
+  { label: "Blog", path: "/blog" },
   { label: "Contact", path: "/contact" },
 ];
 
