@@ -1,10 +1,15 @@
 import Layout from "@/components/Layout";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import coachingImage from "@/assets/coaching-session.jpg";
 import familyImage from "@/assets/family-coaching.jpg";
 
 const Coaching = () => (
   <Layout>
+    <Helmet>
+      <title>Sober Coaching &amp; Recovery Coaching Services | Barr Interventions</title>
+      <meta name="description" content="One-on-one sober coaching to build accountability, develop coping skills, and maintain lasting sobriety. Serving Texas, Oklahoma, and Louisiana." />
+    </Helmet>
     <section className="py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <h1 className="font-heading text-4xl md:text-5xl text-primary tracking-wider mb-6 text-center">Coaching</h1>

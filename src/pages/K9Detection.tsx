@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import ContactForm from "@/components/ContactForm";
 import k9Dog from "@/assets/k9-detection-dog.jpg";
@@ -7,6 +8,10 @@ import { Shield, Home, Building2, Heart, CheckCircle, Phone } from "lucide-react
 
 const K9Detection = () => (
   <Layout>
+    <Helmet>
+      <title>K9 Drug Detection Services in Texas, Oklahoma &amp; Louisiana | Barr Interventions</title>
+      <meta name="description" content="Certified K9 substance detection sweeps for homes, businesses, and treatment facilities. Trained to detect fentanyl, opioids, meth, cocaine, heroin, MDMA, and marijuana." />
+    </Helmet>
     {/* Hero */}
     <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
       <img src={k9Sweep} alt="K9 drug detection sweep in progress" className="absolute inset-0 w-full h-full object-cover" width={1920} height={800} />

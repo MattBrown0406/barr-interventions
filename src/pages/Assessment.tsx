@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -645,6 +646,10 @@ const Assessment = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Family Addiction Assessment | Barr Interventions &amp; Consulting</title>
+        <meta name="description" content="Take our free family addiction assessment to understand your situation and find the right path forward." />
+      </Helmet>
       {/* Hero */}
       <section className="bg-primary text-primary-foreground py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">

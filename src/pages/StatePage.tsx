@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import ContactForm from "@/components/ContactForm";
 import { seoStates, stateCitiesMap } from "@/data/seoStates";
@@ -28,6 +29,10 @@ const StatePage = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Drug &amp; Alcohol Intervention in {state.name} | Barr Interventions &amp; Consulting</title>
+        <meta name="description" content={`${state.description} Call Katie Barr, CIP, at 512.402.5991 for professional intervention, sober coaching, and family support.`} />
+      </Helmet>
       {/* Hero with state image */}
       <section className="relative h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden">
         <img

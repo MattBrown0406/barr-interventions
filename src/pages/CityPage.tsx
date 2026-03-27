@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import ContactForm from "@/components/ContactForm";
 import { seoCities } from "@/data/seoCities";
@@ -18,6 +19,10 @@ const CityPage = () => {
 
   return (
     <Layout>
+      <Helmet>
+        <title>Drug &amp; Alcohol Intervention in {city.name}, {city.stateAbbr} | Barr Interventions</title>
+        <meta name="description" content={`Professional intervention and sober coaching in ${city.name}, ${city.state}. Katie Barr, CIP, provides compassionate addiction intervention services. Call 512.402.5991.`} />
+      </Helmet>
       {/* Hero with state image */}
       {heroImage && (
         <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
@@ -111,6 +116,33 @@ const CityPage = () => {
           </div>
         </section>
       )}
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: `Drug & Alcohol Intervention Services in ${city.name}, ${city.stateAbbr}`,
+            description: `Professional intervention and sober coaching in ${city.name}, ${city.state}.`,
+            provider: {
+              "@type": "Organization",
+              name: "Barr Interventions & Consulting",
+              telephone: "512-402-5991",
+              url: "https://barrinterventions.com",
+            },
+            areaServed: {
+              "@type": "City",
+              name: city.name,
+              containedInPlace: {
+                "@type": "State",
+                name: city.state,
+              },
+            },
+            serviceType: ["Drug Intervention", "Alcohol Intervention", "Sober Coaching", "K9 Drug Detection", "Sober Transport", "Family Coaching"],
+          }),
+        }}
+      />
     </Layout>
   );
 };

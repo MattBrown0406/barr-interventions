@@ -1,10 +1,15 @@
 import Layout from "@/components/Layout";
+import { Helmet } from "react-helmet-async";
 import ContactForm from "@/components/ContactForm";
 import katieBarr from "@/assets/katie-barr.jpg";
 import paperTexture from "@/assets/paper-texture.jpg";
 
 const Contact = () => (
   <Layout>
+    <Helmet>
+      <title>Contact Barr Interventions &amp; Consulting | 512.402.5991</title>
+      <meta name="description" content="Reach out to Katie Barr, CIP, for professional intervention and recovery services in Texas, Oklahoma, and Louisiana. Available 24/7." />
+    </Helmet>
     <section className="py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         <div>
