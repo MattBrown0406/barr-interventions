@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import { Link } from "react-router-dom";
-import katieBarr from "@/assets/katie-barr.jpg";
+import katieBarr from "@/assets/katie-barr-services.jpg";
 
 const services = [
   {
