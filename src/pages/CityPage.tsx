@@ -2,6 +2,8 @@ import { useParams, Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import ContactForm from "@/components/ContactForm";
 import { seoCities } from "@/data/seoCities";
+import { seoStates } from "@/data/seoStates";
+import { getStateImage } from "@/data/stateImages";
 import NotFound from "./NotFound";
 
 const CityPage = () => {
@@ -10,20 +12,33 @@ const CityPage = () => {
 
   if (!city) return <NotFound />;
 
+  const parentState = seoStates.find((s) => s.name === city.state);
+  const heroImage = parentState ? getStateImage(parentState.slug) : "";
   const stateCities = seoCities.filter((c) => c.state === city.state && c.slug !== city.slug).slice(0, 6);
 
   return (
     <Layout>
-      <section className="py-20 px-6 md:px-12 bg-secondary/30">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="font-heading text-3xl md:text-5xl text-primary tracking-wider mb-4">
-            Drug & Alcohol Intervention in {city.name}, {city.stateAbbr}
-          </h1>
-          <p className="text-lg text-muted-foreground">
-            Professional intervention, sober coaching, and family consulting services in {city.name}, {city.state}.
-          </p>
-        </div>
-      </section>
+      {/* Hero with state image */}
+      {heroImage && (
+        <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center overflow-hidden">
+          <img
+            src={heroImage}
+            alt={`${city.name}, ${city.state}`}
+            className="absolute inset-0 w-full h-full object-cover"
+            width={1920}
+            height={800}
+          />
+          <div className="absolute inset-0 bg-foreground/40" />
+          <div className="relative text-center text-primary-foreground px-6 animate-fade-in">
+            <h1 className="font-heading text-3xl md:text-5xl font-bold tracking-wider mb-2">
+              {city.name}, {city.stateAbbr}
+            </h1>
+            <p className="text-base md:text-lg max-w-xl mx-auto opacity-90">
+              Drug & Alcohol Intervention Services
+            </p>
+          </div>
+        </section>
+      )}
 
       <section className="py-16 px-6 md:px-12">
         <div className="max-w-4xl mx-auto space-y-8">
@@ -40,9 +55,9 @@ const CityPage = () => {
               { title: "Family Coaching", desc: `Helping families in ${city.name} understand addiction, set healthy boundaries, and navigate the recovery process together.` },
               { title: "Sober Transport", desc: `Safe, reliable sober transport services to and from treatment facilities serving the ${city.name} area.` },
               { title: "Case Management", desc: `Comprehensive case management including treatment vetting, intake coordination, and discharge planning in ${city.name}.` },
-              { title: "Family Liaison", desc: `Ongoing family support, education, and advocacy for ${city.name} families navigating addiction recovery.` },
+              { title: "K9 Detection", desc: `Professional K9 drug detection sweeps for homes, businesses, and treatment provider facilities in ${city.name}.` },
             ].map((s, i) => (
-              <div key={i} className="p-6 bg-card rounded shadow-sm border border-border">
+              <div key={i} className="p-6 bg-card rounded-lg shadow-sm border border-border">
                 <h3 className="font-heading text-lg text-primary tracking-wider mb-2">{s.title}</h3>
                 <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
               </div>
@@ -51,11 +66,11 @@ const CityPage = () => {
 
           <h2 className="font-heading text-2xl text-primary tracking-wider">Why Choose Barr Interventions in {city.name}?</h2>
           <ul className="space-y-3 text-muted-foreground">
-            <li className="flex gap-2"><span className="text-primary font-bold">•</span> Experienced, compassionate intervention professionals</li>
-            <li className="flex gap-2"><span className="text-primary font-bold">•</span> Ethical, dignified approach rooted in love and respect</li>
-            <li className="flex gap-2"><span className="text-primary font-bold">•</span> Comprehensive support from intervention through aftercare</li>
-            <li className="flex gap-2"><span className="text-primary font-bold">•</span> Available 24/7 for crisis situations in {city.name} and surrounding areas</li>
-            <li className="flex gap-2"><span className="text-primary font-bold">•</span> In-person, phone, and virtual services available</li>
+            <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Experienced, compassionate intervention professionals</li>
+            <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Ethical, dignified approach rooted in love and respect</li>
+            <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Comprehensive support from intervention through aftercare</li>
+            <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Available 24/7 for crisis situations in {city.name} and surrounding areas</li>
+            <li className="flex gap-2"><span className="text-primary font-bold">✓</span> In-person, phone, and virtual services available</li>
           </ul>
         </div>
       </section>
@@ -87,6 +102,11 @@ const CityPage = () => {
                   {c.name}, {c.stateAbbr}
                 </Link>
               ))}
+              {parentState && (
+                <Link to={`/locations/${parentState.slug}`} className="text-sm text-primary font-bold underline hover:opacity-70 transition-opacity">
+                  All {city.state} Services →
+                </Link>
+              )}
             </div>
           </div>
         </section>

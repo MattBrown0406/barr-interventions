@@ -18,6 +18,7 @@ const Footer = () => (
           <Link to="/services" className="hover:opacity-100 transition-opacity">Services</Link>
           <Link to="/k9-detection" className="hover:opacity-100 transition-opacity">K9 Detection</Link>
           <Link to="/coaching" className="hover:opacity-100 transition-opacity">Coaching</Link>
+          <Link to="/locations" className="hover:opacity-100 transition-opacity">Locations</Link>
           <Link to="/contact" className="hover:opacity-100 transition-opacity">Contact</Link>
         </nav>
       </div>
@@ -27,7 +28,7 @@ const Footer = () => (
           <Phone size={16} />
           512.402.5991
         </a>
-        <p className="text-sm opacity-60 mt-4">Serving Texas, Oklahoma & Louisiana</p>
+        <p className="text-sm opacity-60 mt-4">Serving clients nationwide</p>
       </div>
     </div>
     <div className="max-w-6xl mx-auto mt-8 pt-6 border-t border-primary-foreground/20 text-center text-xs opacity-50">

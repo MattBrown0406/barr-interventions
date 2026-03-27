@@ -10,6 +10,8 @@ import Coaching from "./pages/Coaching";
 import Contact from "./pages/Contact";
 import K9Detection from "./pages/K9Detection";
 import CityPage from "./pages/CityPage";
+import StatePage from "./pages/StatePage";
+import Locations from "./pages/Locations";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -27,6 +29,8 @@ const App = () => (
           <Route path="/coaching" element={<Coaching />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/k9-detection" element={<K9Detection />} />
+          <Route path="/locations" element={<Locations />} />
+          <Route path="/locations/:stateSlug" element={<StatePage />} />
           <Route path="/services/:citySlug" element={<CityPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
