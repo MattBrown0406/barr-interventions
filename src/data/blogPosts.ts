@@ -11,6 +11,23 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "dual-diagnosis-co-occurring-disorders",
+    title: "When Addiction and Mental Illness Collide: Understanding Dual Diagnosis",
+    excerpt: "If your loved one struggles with both addiction and a mental health condition, they may have dual diagnosis. Learn what it means, why it happens, and how families can help.",
+    date: "2026-04-14",
+    author: "Katie Barr, CIP",
+    category: "Family Support",
+    readTime: "5 min read",
+    content: [
+      "If you've been watching your loved one struggle with addiction, you may have noticed something else going on beneath the surface — a persistent darkness, an anxiety that never lifts, or a volatility that seems disconnected from the substance use alone. You're not imagining it.",
+      "Many people who struggle with addiction also live with an undiagnosed or untreated mental health condition. When the two exist together, it's called dual diagnosis — or co-occurring disorders. Understanding what that means can change everything about how you approach getting your loved one help.",
+      "## What Is Dual Diagnosis, and Why Does It Matter?",
+      "Dual diagnosis refers to the presence of both a substance use disorder and a mental health condition at the same time. Common combinations include depression and alcohol use disorder, anxiety and benzodiazepine dependency, PTSD and opioid addiction, or bipolar disorder and stimulant use.",
+      "This isn't rare. Roughly half of people with a serious mental illness also have a substance use disorder — and vice versa. The two conditions are deeply entangled. Each one worsens the other, making both harder to treat if only one is addressed.",
+      "For families, this matters because standard treatment programs that focus only on substance use may not be enough. If the underlying mental health condition isn't identified and treated alongside the addiction, the chances of relapse increase significantly. You could get your loved one into the best program in the country and still see them come home and struggle — not because treatment failed, but because only half the problem was treated.",
+    ],
+  },
+  {
     slug: "what-to-expect-during-an-intervention",
     title: "What to Expect During a Professional Intervention",
     excerpt: "An intervention can feel overwhelming for families. Understanding the process helps remove fear and empowers loved ones to take the first step toward healing.",
