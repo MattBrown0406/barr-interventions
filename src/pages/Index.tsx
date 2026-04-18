@@ -37,7 +37,7 @@ const Index = () => (
               rel="noopener noreferrer"
               className="inline-block rounded bg-accent px-8 py-3 font-heading text-sm tracking-widest text-accent-foreground transition-opacity hover:opacity-90"
             >
-              Book a Session with Katie — $150
+              Crisis Coaching Session with Katie, $150
             </a>
             <Link to="/contact" className="inline-block rounded border border-white/70 px-8 py-3 font-heading text-sm tracking-widest text-white transition-colors hover:bg-white hover:text-foreground">
               Start Confidentially
