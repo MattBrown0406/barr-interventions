@@ -31,6 +31,14 @@ const Index = () => (
             <a href="tel:8177391349" className="inline-block rounded bg-primary px-8 py-3 font-heading text-sm tracking-widest text-primary-foreground transition-opacity hover:opacity-90">
               Call 817.739.1349
             </a>
+            <a
+              href="https://soberhelpline.com/book-consultation?plan=emergency"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block rounded bg-accent px-8 py-3 font-heading text-sm tracking-widest text-accent-foreground transition-opacity hover:opacity-90"
+            >
+              Book a Session with Katie — $150
+            </a>
             <Link to="/contact" className="inline-block rounded border border-white/70 px-8 py-3 font-heading text-sm tracking-widest text-white transition-colors hover:bg-white hover:text-foreground">
               Start Confidentially
             </Link>
