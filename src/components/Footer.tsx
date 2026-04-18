@@ -25,9 +25,9 @@ const Footer = () => (
       </div>
       <div>
         <h4 className="font-heading text-sm tracking-widest mb-4">Get in Touch</h4>
-        <a href="tel:5124025991" className="flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity">
+        <a href="tel:8177391349" className="flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity">
           <Phone size={16} />
-          512.402.5991
+          817.739.1349
         </a>
         <p className="text-sm opacity-60 mt-4">Serving clients nationwide</p>
       </div>

@@ -11,7 +11,7 @@ const Index = () => (
   <Layout>
     <Helmet>
       <title>Drug &amp; Alcohol Intervention Specialist | Texas, Oklahoma &amp; Louisiana | Barr Interventions</title>
-      <meta name="description" content="Professional drug and alcohol intervention, sober coaching, K9 detection, and family consulting across Texas, Oklahoma, and Louisiana. Call 512.402.5991." />
+      <meta name="description" content="Professional drug and alcohol intervention, sober coaching, K9 detection, and family consulting across Texas, Oklahoma, and Louisiana. Call 817.739.1349." />
     </Helmet>
     {/* Hero */}
     <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center overflow-hidden">
@@ -54,7 +54,7 @@ const Index = () => (
         <div>
           <h2 className="font-heading text-3xl text-primary tracking-wider mb-4">Contact Us</h2>
           <p className="text-muted-foreground mb-2">Ready to take the first step? Reach out today.</p>
-          <p className="text-2xl font-heading text-primary tracking-wider">512.402.5991</p>
+          <p className="text-2xl font-heading text-primary tracking-wider">817.739.1349</p>
         </div>
         <ContactForm />
       </div>

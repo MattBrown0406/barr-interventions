@@ -21,7 +21,7 @@ const CityPage = () => {
     <Layout>
       <Helmet>
         <title>Drug &amp; Alcohol Intervention in {city.name}, {city.stateAbbr} | Barr Interventions</title>
-        <meta name="description" content={`Professional intervention and sober coaching in ${city.name}, ${city.state}. Katie Barr, CIP, provides compassionate addiction intervention services. Call 512.402.5991.`} />
+        <meta name="description" content={`Professional intervention and sober coaching in ${city.name}, ${city.state}. Katie Barr, CIP, provides compassionate addiction intervention services. Call 817.739.1349.`} />
       </Helmet>
       {/* Hero with state image */}
       {heroImage && (
@@ -89,7 +89,7 @@ const CityPage = () => {
             <p className="text-muted-foreground mb-4">
               Don't wait for a crisis. Contact Barr Interventions & Consulting today to discuss how we can help your family in {city.name}.
             </p>
-            <p className="text-2xl font-heading text-primary tracking-wider">512.402.5991</p>
+            <p className="text-2xl font-heading text-primary tracking-wider">817.739.1349</p>
           </div>
           <ContactForm />
         </div>
@@ -128,7 +128,7 @@ const CityPage = () => {
             provider: {
               "@type": "Organization",
               name: "Barr Interventions & Consulting",
-              telephone: "512-402-5991",
+              telephone: "817-739-1349",
               url: "https://barrinterventions.com",
             },
             areaServed: {
