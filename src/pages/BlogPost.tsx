@@ -69,10 +69,10 @@ const BlogPost = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="tel:5124025991"
+                href="tel:8177391349"
                 className="inline-block bg-primary text-primary-foreground font-heading text-sm tracking-widest px-8 py-3 rounded hover:opacity-90 transition-opacity"
               >
-                Call 512.402.5991
+                Call 817.739.1349
               </a>
               <Link
                 to="/contact"

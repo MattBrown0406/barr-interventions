@@ -7,7 +7,7 @@ import paperTexture from "@/assets/paper-texture.jpg";
 const Contact = () => (
   <Layout>
     <Helmet>
-      <title>Contact Barr Interventions &amp; Consulting | 512.402.5991</title>
+      <title>Contact Barr Interventions &amp; Consulting | 817.739.1349</title>
       <meta name="description" content="Reach out to Katie Barr, CIP, for professional intervention and recovery services in Texas, Oklahoma, and Louisiana. Available 24/7." />
     </Helmet>
     <section className="py-20 px-6 md:px-12">
@@ -29,7 +29,7 @@ const Contact = () => (
       <img src={paperTexture} alt="" className="absolute inset-0 w-full h-full object-cover opacity-30" loading="lazy" width={1920} height={600} />
       <div className="relative max-w-4xl mx-auto text-center">
         <h2 className="font-heading text-3xl text-primary tracking-wider mb-4">Contact Us</h2>
-        <p className="text-3xl font-heading text-primary tracking-wider mb-2">512.402.5991</p>
+        <p className="text-3xl font-heading text-primary tracking-wider mb-2">817.739.1349</p>
         <p className="text-muted-foreground">Serving Texas, Oklahoma & Louisiana</p>
       </div>
     </section>

@@ -210,9 +210,9 @@ const K9Detection = () => (
           <p className="text-muted-foreground mb-4 leading-relaxed">
             Concerned about substance use in your home, school, or facility? Abu and our certified handler deliver discreet, thorough, and reliable detection sweeps. Reach out today.
           </p>
-          <a href="tel:5124025991" className="flex items-center gap-2 text-2xl font-heading text-primary tracking-wider mb-2">
+          <a href="tel:8177391349" className="flex items-center gap-2 text-2xl font-heading text-primary tracking-wider mb-2">
             <Phone className="w-6 h-6" />
-            512.402.5991
+            817.739.1349
           </a>
           <p className="text-muted-foreground text-sm">Barr Interventions & Consulting · Narcotics Detection K9 Division</p>
         </div>
@@ -231,7 +231,7 @@ const K9Detection = () => (
           provider: {
             "@type": "Organization",
             name: "Barr Interventions & Consulting",
-            telephone: "+1-512-402-5991",
+            telephone: "+1-817-739-1349",
           },
           description:
             "Certified K9 narcotics detection services for homes, schools, businesses, and treatment facilities. 11-substance detection panel including fentanyl, cocaine, meth, heroin, kratom, xanax, and suboxone.",
