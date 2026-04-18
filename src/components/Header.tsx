@@ -24,19 +24,27 @@ const Header = () => {
         <img src={barrLogo} alt="Barr Interventions & Consulting" className="h-14 md:h-18 w-auto" />
       </Link>
 
-      <nav className="hidden md:flex items-center gap-8">
-        {navLinks.map((link) => (
-          <Link
-            key={link.path}
-            to={link.path}
-            className={`font-heading text-sm tracking-widest uppercase transition-colors hover:text-primary ${
-              location.pathname === link.path ? "text-primary" : "text-foreground"
-            }`}
-          >
-            {link.label}
-          </Link>
-        ))}
-      </nav>
+      <div className="hidden md:flex items-center gap-6">
+        <nav className="flex items-center gap-8">
+          {navLinks.map((link) => (
+            <Link
+              key={link.path}
+              to={link.path}
+              className={`font-heading text-sm tracking-widest uppercase transition-colors hover:text-primary ${
+                location.pathname === link.path ? "text-primary" : "text-foreground"
+              }`}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </nav>
+        <a
+          href="tel:5124025991"
+          className="rounded bg-primary px-4 py-2 font-heading text-xs tracking-[0.2em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
+        >
+          Call Now
+        </a>
+      </div>
 
       <button
         className="md:hidden text-foreground"
@@ -61,6 +69,12 @@ const Header = () => {
                 {link.label}
               </Link>
             ))}
+            <a
+              href="tel:5124025991"
+              className="mt-2 rounded bg-primary px-4 py-3 text-center font-heading text-xs tracking-[0.2em] text-primary-foreground uppercase"
+            >
+              Call 512.402.5991
+            </a>
           </nav>
         </div>
       )}

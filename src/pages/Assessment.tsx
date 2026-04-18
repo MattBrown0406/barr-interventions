@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -75,11 +75,15 @@ const Assessment = () => {
   };
 
   const handleSubmit = () => {
+    const subject = encodeURIComponent("New family addiction assessment inquiry");
+    const body = encodeURIComponent(JSON.stringify(formData, null, 2));
+
+    window.location.href = `mailto:katie@barrinterventions.com?subject=${subject}&body=${body}`;
+
     toast({
-      title: "Assessment Submitted",
-      description: "Thank you. Our clinical team will review your assessment and contact you within 24 hours.",
+      title: "Opening your email app",
+      description: "We prepared an email draft with your assessment details so it can be sent directly and reviewed promptly.",
     });
-    console.log("Assessment data:", formData);
   };
 
   const sectionTitles: Record<number, string> = {
@@ -633,7 +637,7 @@ const Assessment = () => {
             <div className="bg-muted/50 border border-border rounded-lg p-4 flex items-start gap-3">
               <Shield className="h-5 w-5 text-primary mt-0.5 shrink-0" />
               <p className="text-sm text-muted-foreground">
-                By submitting this assessment, you confirm that the information provided is accurate to the best of your knowledge. All information is strictly confidential and protected under HIPAA guidelines. It will be used solely for clinical evaluation and intervention planning.
+                By submitting this assessment, you confirm that the information provided is accurate to the best of your knowledge. This website does not store the form in a secure medical portal. Instead, it prepares an email draft for you to review and send directly to Barr Interventions for follow-up.
               </p>
             </div>
           </div>
@@ -646,10 +650,11 @@ const Assessment = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Family Addiction Assessment | Barr Interventions &amp; Consulting</title>
-        <meta name="description" content="Take our free family addiction assessment to understand your situation and find the right path forward." />
-      </Helmet>
+      <Seo
+        title="Family Addiction Assessment | Barr Interventions & Consulting"
+        description="Complete a family addiction assessment to organize the facts, clarify urgency, and start a more informed conversation with Barr Interventions."
+        path="/assessment"
+      />
       {/* Hero */}
       <section className="bg-primary text-primary-foreground py-16 px-6">
         <div className="max-w-3xl mx-auto text-center">
@@ -679,7 +684,7 @@ const Assessment = () => {
           {currentSection === 1 && (
             <div className="bg-muted/50 border border-border rounded-lg p-4 mb-8">
               <p className="text-sm text-muted-foreground">
-                This comprehensive assessment gathers clinical information based on DSM-V diagnostic criteria and ASAM placement dimensions. All information is strictly confidential and will be used only for treatment planning and intervention preparation.
+                This assessment gathers information based on DSM-V diagnostic criteria and ASAM placement dimensions. When you submit, the site opens your email app with a draft so you can review the details before sending them directly to Barr Interventions.
               </p>
             </div>
           )}

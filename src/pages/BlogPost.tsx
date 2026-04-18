@@ -1,6 +1,6 @@
 import { useParams, Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import { blogPosts } from "@/data/blogPosts";
 import NotFound from "./NotFound";
 
@@ -14,10 +14,12 @@ const BlogPost = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>{post.title} | Barr Interventions</title>
-        <meta name="description" content={post.excerpt} />
-      </Helmet>
+      <Seo
+        title={`${post.title} | Barr Interventions`}
+        description={post.excerpt}
+        path={`/blog/${post.slug}`}
+        type="article"
+      />
       <article className="py-20 px-6 md:px-12">
         <div className="max-w-3xl mx-auto">
           {/* Header */}

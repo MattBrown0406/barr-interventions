@@ -29,7 +29,10 @@ const Footer = () => (
           <Phone size={16} />
           817.739.1349
         </a>
-        <p className="text-sm opacity-60 mt-4">Serving clients nationwide</p>
+        <a href="mailto:katie@barrinterventions.com" className="mt-3 block text-sm opacity-80 hover:opacity-100 transition-opacity">
+          katie@barrinterventions.com
+        </a>
+        <p className="text-sm opacity-60 mt-4">Based in Texas, serving families nationwide.</p>
       </div>
     </div>
     <div className="max-w-6xl mx-auto mt-8 pt-6 border-t border-primary-foreground/20 text-center text-xs opacity-50">

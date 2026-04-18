@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import Seo from "@/components/Seo";
 import katieBarr from "@/assets/katie-barr-services.jpg";
 
 const services = [
@@ -57,10 +57,11 @@ const services = [
 
 const Services = () => (
   <Layout>
-    <Helmet>
-      <title>Intervention, Sober Coaching &amp; K9 Detection Services | Barr Interventions</title>
-      <meta name="description" content="Professional drug and alcohol intervention, sober coaching, family liaison, case management, K9 substance detection, and sober transport services." />
-    </Helmet>
+    <Seo
+      title="Intervention, Sober Coaching & K9 Detection Services | Barr Interventions"
+      description="Professional drug and alcohol intervention, sober coaching, family liaison, case management, K9 substance detection, and sober transport services."
+      path="/services"
+    />
     <section className="py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-start mb-16">

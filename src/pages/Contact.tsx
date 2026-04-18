@@ -1,21 +1,22 @@
 import Layout from "@/components/Layout";
-import { Helmet } from "react-helmet-async";
 import ContactForm from "@/components/ContactForm";
+import Seo from "@/components/Seo";
 import katieBarr from "@/assets/katie-barr.jpg";
 import paperTexture from "@/assets/paper-texture.jpg";
 
 const Contact = () => (
   <Layout>
-    <Helmet>
-      <title>Contact Barr Interventions &amp; Consulting | 817.739.1349</title>
-      <meta name="description" content="Reach out to Katie Barr, CIP, for professional intervention and recovery services in Texas, Oklahoma, and Louisiana. Available 24/7." />
-    </Helmet>
+    <Seo
+      title="Contact Barr Interventions & Consulting | 817.739.1349"
+      description="Reach out to Katie Barr, CIP, for professional intervention and recovery services in Texas, Oklahoma, Louisiana, and nationwide. Available 24/7."
+      path="/contact"
+    />
     <section className="py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
         <div>
           <h1 className="font-heading text-4xl md:text-5xl text-primary tracking-wider mb-4">Get in Touch</h1>
           <p className="text-muted-foreground leading-relaxed mb-8">
-            Thank you for your interest in Barr Interventions & Consulting. Please complete this form and a member of the team will follow up within 24 hours.
+            Thank you for your interest in Barr Interventions & Consulting. Use the form below to open a prefilled email draft, or call directly for urgent support.
           </p>
           <img src={katieBarr} alt="Katie Barr" className="rounded shadow-lg w-full max-w-sm" loading="lazy" width={800} height={1000} />
         </div>

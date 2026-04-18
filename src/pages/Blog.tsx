@@ -1,14 +1,15 @@
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
+import Seo from "@/components/Seo";
 import { blogPosts } from "@/data/blogPosts";
 
 const Blog = () => (
   <Layout>
-    <Helmet>
-      <title>Addiction Intervention Blog | Barr Interventions &amp; Consulting</title>
-      <meta name="description" content="Expert insights on drug and alcohol intervention, family support, sober coaching, and recovery from Katie Barr, CIP." />
-    </Helmet>
+    <Seo
+      title="Addiction Intervention Blog | Barr Interventions & Consulting"
+      description="Expert insights on drug and alcohol intervention, family support, sober coaching, recovery, and treatment planning from Katie Barr, CIP."
+      path="/blog"
+    />
     <section className="py-20 px-6 md:px-12">
       <div className="max-w-4xl mx-auto">
         <h1 className="font-heading text-4xl md:text-5xl text-primary tracking-wider mb-4">

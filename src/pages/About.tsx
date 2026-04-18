@@ -1,14 +1,15 @@
 import Layout from "@/components/Layout";
-import { Helmet } from "react-helmet-async";
 import katieBarr from "@/assets/katie-barr.jpg";
+import Seo from "@/components/Seo";
 import { Link } from "react-router-dom";
 
 const About = () => (
   <Layout>
-    <Helmet>
-      <title>About Katie Barr, CIP — Intervention Specialist | Barr Interventions</title>
-      <meta name="description" content="Meet Katie Barr, CIP and LCDCi. Professional drug and alcohol interventionist with over a decade of experience serving Texas, Oklahoma, and Louisiana families." />
-    </Helmet>
+    <Seo
+      title="About Katie Barr, CIP | Barr Interventions"
+      description="Meet Katie Barr, CIP and LCDCi, a professional drug and alcohol interventionist with more than a decade of experience helping families in crisis."
+      path="/about"
+    />
 
     <section className="py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
