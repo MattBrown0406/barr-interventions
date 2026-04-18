@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
-import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import ContactForm from "@/components/ContactForm";
+import Seo, { organizationSchema } from "@/components/Seo";
 import abuPhoto from "@/assets/abu-k9.png";
 import { Shield, CheckCircle, Phone, Star, Award, Search, Heart, Building2, Home } from "lucide-react";
 
@@ -18,10 +18,23 @@ const coreSkills = [
 
 const K9Detection = () => (
   <Layout>
-    <Helmet>
-      <title>Abu — K9 Drug Detection Director | Barr Interventions & Consulting</title>
-      <meta name="description" content="Meet Abu, Director of Detections at Barr Interventions & Consulting. Certified narcotics K9 detecting fentanyl, cocaine, meth, heroin, kratom, xanax, suboxone and more." />
-    </Helmet>
+    <Seo
+      title="K9 Drug Detection Services | Barr Interventions & Consulting"
+      description="Certified K9 drug detection services for homes, schools, businesses, and treatment settings. Learn about Abu and Barr Interventions' discreet narcotics sweep services."
+      path="/k9-detection"
+      schema={[
+        organizationSchema,
+        {
+          "@context": "https://schema.org",
+          "@type": "Service",
+          name: "K9 Drug Detection Services",
+          provider: organizationSchema,
+          serviceType: "Narcotics Detection",
+          description:
+            "Certified K9 narcotics detection services for homes, schools, businesses, and treatment facilities.",
+        },
+      ]}
+    />
 
     {/* Hero */}
     <section className="relative py-20 px-6 md:px-12 bg-primary overflow-hidden">

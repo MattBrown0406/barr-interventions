@@ -4,6 +4,22 @@ const SITE_NAME = "Barr Interventions & Consulting";
 const BASE_URL = "https://barrinterventions.com";
 const DEFAULT_IMAGE = `${BASE_URL}/favicon.png`;
 
+export const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  name: SITE_NAME,
+  url: BASE_URL,
+  image: DEFAULT_IMAGE,
+  telephone: "+1-512-402-5991",
+  email: "katie@barrinterventions.com",
+  areaServed: "US",
+  address: {
+    "@type": "PostalAddress",
+    addressRegion: "TX",
+    addressCountry: "US",
+  },
+};
+
 type SeoProps = {
   title: string;
   description: string;
@@ -19,9 +35,12 @@ const Seo = ({ title, description, path = "/", image = DEFAULT_IMAGE, type = "we
 
   return (
     <Helmet>
+      <html lang="en" />
       <title>{title}</title>
       <meta name="description" content={description} />
+      <meta name="robots" content="index,follow" />
       <link rel="canonical" href={canonical} />
+      <meta property="og:locale" content="en_US" />
       <meta property="og:type" content={type} />
       <meta property="og:site_name" content={SITE_NAME} />
       <meta property="og:title" content={title} />
@@ -32,11 +51,7 @@ const Seo = ({ title, description, path = "/", image = DEFAULT_IMAGE, type = "we
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={imageUrl} />
-      {schema ? (
-        <script type="application/ld+json">
-          {JSON.stringify(schema)}
-        </script>
-      ) : null}
+      {schema ? <script type="application/ld+json">{JSON.stringify(schema)}</script> : null}
     </Helmet>
   );
 };

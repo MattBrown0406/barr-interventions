@@ -1,7 +1,7 @@
 import { useParams, Link } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import Layout from "@/components/Layout";
 import ContactForm from "@/components/ContactForm";
+import Seo, { organizationSchema } from "@/components/Seo";
 import { seoStates, stateCitiesMap } from "@/data/seoStates";
 import { seoCities } from "@/data/seoCities";
 import { getStateImage } from "@/data/stateImages";
@@ -29,10 +29,26 @@ const StatePage = () => {
 
   return (
     <Layout>
-      <Helmet>
-        <title>Drug &amp; Alcohol Intervention in {state.name} | Barr Interventions &amp; Consulting</title>
-        <meta name="description" content={`${state.description} Call Katie Barr, CIP, at 817.739.1349 for professional intervention, sober coaching, and family support.`} />
-      </Helmet>
+      <Seo
+        title={`Drug & Alcohol Intervention in ${state.name} | Barr Interventions & Consulting`}
+        description={`${state.description} Call Katie Barr, CIP, at 817.739.1349 for professional intervention, sober coaching, and family support.`}
+        path={`/locations/${state.slug}`}
+        schema={[
+          organizationSchema,
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: `Drug & Alcohol Intervention Services in ${state.name}`,
+            description: state.description,
+            provider: organizationSchema,
+            areaServed: {
+              "@type": "State",
+              name: state.name,
+            },
+            serviceType: ["Drug Intervention", "Alcohol Intervention", "Sober Coaching", "K9 Drug Detection", "Sober Transport", "Family Coaching"],
+          },
+        ]}
+      />
       {/* Hero with state image */}
       <section className="relative h-[50vh] min-h-[350px] flex items-center justify-center overflow-hidden">
         <img
@@ -178,29 +194,6 @@ const StatePage = () => {
         </div>
       </section>
 
-      {/* JSON-LD Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Service",
-            name: `Drug & Alcohol Intervention Services in ${state.name}`,
-            description: state.description,
-            provider: {
-              "@type": "Organization",
-              name: "Barr Interventions & Consulting",
-              telephone: "817-739-1349",
-              url: "https://barrinterventions.com",
-            },
-            areaServed: {
-              "@type": "State",
-              name: state.name,
-            },
-            serviceType: ["Drug Intervention", "Alcohol Intervention", "Sober Coaching", "K9 Drug Detection", "Sober Transport", "Family Coaching"],
-          }),
-        }}
-      />
     </Layout>
   );
 };

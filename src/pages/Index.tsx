@@ -30,8 +30,11 @@ const Index = () => (
     {/* Intro */}
     <section className="py-20 px-6 md:px-12 max-w-4xl mx-auto text-center">
       <h1 className="font-heading text-2xl md:text-3xl text-primary tracking-wider mb-4">Compassionate Addiction Intervention Services for Families Who Need a Clear Plan</h1>
-      <p className="text-lg leading-relaxed text-muted-foreground">
+      <p className="text-lg leading-relaxed text-muted-foreground mb-4">
         Barr Interventions & Consulting helps families move from chaos and fear to a structured path forward. Led by Katie Barr, CIP, we provide intervention services, sober coaching, family support, transport, case management, and K9 substance detection in Texas and nationwide.
+      </p>
+      <p className="text-base leading-relaxed text-foreground font-medium">
+        Families call when trust is worn thin, emotions are high, and the next move feels unclear. We bring experienced guidance, calm communication, and a plan that protects dignity while creating real momentum toward treatment and recovery.
       </p>
       <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
         <a href="tel:5124025991" className="inline-block bg-primary text-primary-foreground font-heading text-sm tracking-widest px-8 py-3 rounded hover:opacity-90 transition-opacity">
@@ -40,6 +43,20 @@ const Index = () => (
         <Link to="/services" className="inline-block border border-primary text-primary font-heading text-sm tracking-widest px-8 py-3 rounded hover:bg-primary hover:text-primary-foreground transition-colors">
           Explore Services
         </Link>
+      </div>
+    </section>
+
+    <section className="px-6 md:px-12 pb-4">
+      <div className="max-w-5xl mx-auto grid gap-4 md:grid-cols-3">
+        {[
+          "Led by Katie Barr, CIP with clinical and lived-experience perspective",
+          "Support for intervention, placement coordination, family systems, and sober transport",
+          "Discreet help for urgent situations in Texas and nationwide",
+        ].map((item) => (
+          <div key={item} className="rounded border border-border bg-card px-5 py-4 text-sm text-muted-foreground shadow-sm">
+            {item}
+          </div>
+        ))}
       </div>
     </section>
 
