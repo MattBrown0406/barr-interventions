@@ -14,6 +14,7 @@ const About = () => (
     <section className="py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         <div>
+          <p className="font-heading text-xs text-primary tracking-[0.32em] mb-3">About Barr Interventions</p>
           <h1 className="font-heading text-4xl md:text-5xl text-primary tracking-wider mb-2">Katie Barr</h1>
           <p className="font-heading text-xl text-muted-foreground tracking-wider mb-6">CIP · LCDCi · Board Registered Interventionist</p>
           <p className="text-muted-foreground leading-relaxed mb-4">
@@ -58,6 +59,17 @@ const About = () => (
 
     <section className="py-16 px-6 md:px-12">
       <div className="max-w-4xl mx-auto">
+        <div className="mb-8 grid gap-4 md:grid-cols-3">
+          {[
+            "Certified Intervention Professional with a family-systems approach",
+            "Clinical training plus lived understanding of long-term recovery",
+            "Texas-based, serving families across the region and nationwide",
+          ].map((item) => (
+            <div key={item} className="rounded-lg border border-border bg-card px-5 py-4 text-sm text-muted-foreground shadow-sm">
+              {item}
+            </div>
+          ))}
+        </div>
         <h2 className="font-heading text-3xl text-primary tracking-wider mb-8">Credentials & Training</h2>
         <div className="grid sm:grid-cols-2 gap-6">
           {[

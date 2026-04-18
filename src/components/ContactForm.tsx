@@ -35,11 +35,11 @@ const ContactForm = () => {
     <div className="space-y-5 max-w-lg">
       <div className="grid gap-3 sm:grid-cols-2">
         <a
-          href="tel:5124025991"
+          href="tel:8177391349"
           className="flex items-center justify-center gap-2 rounded border border-border bg-card px-4 py-3 text-sm font-heading tracking-wider text-primary transition-colors hover:bg-secondary"
         >
           <Phone className="h-4 w-4" />
-          Call 512.402.5991
+          Call 817.739.1349
         </a>
         <a
           href="mailto:katie@barrinterventions.com"
@@ -89,12 +89,12 @@ const ContactForm = () => {
           className="bg-card border-border"
         />
         <Button type="submit" className="w-full font-heading tracking-wider">
-          Open Email Draft
+          Open Confidential Email Draft
         </Button>
       </form>
 
       <p className="text-sm text-muted-foreground leading-relaxed">
-        This form opens your email app with a draft addressed to katie@barrinterventions.com. For urgent situations, calling is the fastest option.
+        This form opens your email app with a draft addressed to katie@barrinterventions.com. For urgent situations or same-day needs, calling 817.739.1349 is the fastest option.
       </p>
     </div>
   );

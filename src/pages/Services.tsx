@@ -55,6 +55,12 @@ const services = [
   },
 ];
 
+const serviceHighlights = [
+  "Confidential guidance for families in crisis",
+  "Practical planning around treatment, transport, and follow-through",
+  "Support rooted in dignity, directness, and real-world experience",
+];
+
 const Services = () => (
   <Layout>
     <Seo
@@ -64,11 +70,14 @@ const Services = () => (
     />
     <section className="py-20 px-6 md:px-12">
       <div className="max-w-6xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 items-start mb-16">
+        <div className="grid md:grid-cols-2 gap-12 items-start mb-10">
           <div>
             <h1 className="font-heading text-4xl md:text-5xl text-primary tracking-wider mb-6">Services</h1>
-            <p className="text-muted-foreground leading-relaxed">
-              Barr Interventions & Consulting offers a suite of self-pay services to meticulously assist individuals experiencing challenges with addiction. Because addiction is a family disease, services are meant to support the loved ones of the affected individual. With any service provided, the utmost respect and attention to detail is guaranteed.
+            <p className="text-muted-foreground leading-relaxed mb-5">
+              Barr Interventions & Consulting offers focused, self-pay support for families and individuals navigating addiction, relapse, treatment transitions, and high-stress decisions. Every service is designed to reduce chaos, clarify options, and help families respond with more consistency and less fear.
+            </p>
+            <p className="text-foreground leading-relaxed font-medium">
+              If you are not sure which service fits your situation, start with a call. Katie can help you determine whether the right next step is intervention, coaching, transport, family guidance, K9 detection, or a coordinated treatment plan.
             </p>
           </div>
           <img
@@ -79,6 +88,14 @@ const Services = () => (
             width={800}
             height={1000}
           />
+        </div>
+
+        <div className="mb-16 grid gap-4 md:grid-cols-3">
+          {serviceHighlights.map((item) => (
+            <div key={item} className="rounded-lg border border-border bg-card px-5 py-4 text-sm text-muted-foreground shadow-sm">
+              {item}
+            </div>
+          ))}
         </div>
 
         <div className="space-y-16">
@@ -105,10 +122,19 @@ const Services = () => (
           ))}
         </div>
 
-        <div className="mt-16 text-center">
-          <Link to="/contact" className="inline-block bg-primary text-primary-foreground font-heading text-sm tracking-widest px-8 py-3 rounded hover:opacity-90 transition-opacity">
-            Get Started Today
-          </Link>
+        <div className="mt-16 rounded-2xl border border-border bg-secondary/40 p-8 text-center">
+          <h2 className="font-heading text-2xl text-primary tracking-wider mb-3">Not sure where to begin?</h2>
+          <p className="mx-auto mb-6 max-w-2xl text-muted-foreground leading-relaxed">
+            Start with a conversation about what is happening, what risks are present, and what your family has already tried. You will leave that first discussion with more clarity than you have now.
+          </p>
+          <div className="flex flex-col justify-center gap-4 sm:flex-row">
+            <a href="tel:8177391349" className="inline-block rounded bg-primary px-8 py-3 font-heading text-sm tracking-widest text-primary-foreground transition-opacity hover:opacity-90">
+              Call 817.739.1349
+            </a>
+            <Link to="/contact" className="inline-block rounded border border-primary px-8 py-3 font-heading text-sm tracking-widest text-primary transition-colors hover:bg-primary hover:text-primary-foreground">
+              Contact Barr Interventions
+            </Link>
+          </div>
         </div>
       </div>
     </section>

@@ -10,14 +10,18 @@ export const organizationSchema = {
   name: SITE_NAME,
   url: BASE_URL,
   image: DEFAULT_IMAGE,
-  telephone: "+1-512-402-5991",
+  telephone: "+1-817-739-1349",
   email: "katie@barrinterventions.com",
   areaServed: "US",
+  priceRange: "$$$",
+  description:
+    "Confidential addiction intervention, family consulting, sober coaching, transport, and K9 detection services based in Texas and serving families nationwide.",
   address: {
     "@type": "PostalAddress",
     addressRegion: "TX",
     addressCountry: "US",
   },
+  sameAs: [BASE_URL],
 };
 
 type SeoProps = {

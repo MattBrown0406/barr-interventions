@@ -8,8 +8,9 @@ const Footer = () => (
       <div>
         <img src={barrLogoWhite} alt="Barr Interventions & Consulting" className="h-16 w-auto mb-4" />
         <p className="text-sm opacity-80 leading-relaxed">
-          Devoted to helping individuals and families regain their lives amidst struggles with drugs and alcohol.
+          Professional intervention, family guidance, sober support, and placement coordination for families facing substance use and mental health crises.
         </p>
+        <p className="mt-4 text-xs uppercase tracking-[0.2em] opacity-60">Confidential, judgment-free, and client-centered</p>
       </div>
       <div>
         <h4 className="font-heading text-sm tracking-widest mb-4">Quick Links</h4>
@@ -25,6 +26,7 @@ const Footer = () => (
       </div>
       <div>
         <h4 className="font-heading text-sm tracking-widest mb-4">Get in Touch</h4>
+        <p className="mb-3 text-sm opacity-80">Start with a call if the situation is urgent. Katie can help you understand the next right step.</p>
         <a href="tel:8177391349" className="flex items-center gap-2 text-sm opacity-80 hover:opacity-100 transition-opacity">
           <Phone size={16} />
           817.739.1349

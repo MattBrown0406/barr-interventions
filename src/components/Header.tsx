@@ -19,8 +19,18 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-card py-6 px-6 md:px-12 flex items-center justify-between relative z-50">
-      <Link to="/" className="flex items-center">
+    <header className="relative z-50 border-b border-border/70 bg-card/95 backdrop-blur supports-[backdrop-filter]:bg-card/85">
+      <div className="border-b border-border/60 bg-primary text-primary-foreground">
+        <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-2 text-[11px] font-heading uppercase tracking-[0.24em] md:px-12">
+          <span>Confidential support for families in crisis, available nationwide</span>
+          <a href="tel:8177391349" className="whitespace-nowrap transition-opacity hover:opacity-80">
+            Call 817.739.1349
+          </a>
+        </div>
+      </div>
+
+      <div className="flex items-center justify-between px-6 py-5 md:px-12">
+      <Link to="/" className="flex items-center" aria-label="Barr Interventions home">
         <img src={barrLogo} alt="Barr Interventions & Consulting" className="h-14 md:h-18 w-auto" />
       </Link>
 
@@ -39,7 +49,7 @@ const Header = () => {
           ))}
         </nav>
         <a
-          href="tel:5124025991"
+          href="tel:8177391349"
           className="rounded bg-primary px-4 py-2 font-heading text-xs tracking-[0.2em] text-primary-foreground uppercase transition-opacity hover:opacity-90"
         >
           Call Now
@@ -47,9 +57,10 @@ const Header = () => {
       </div>
 
       <button
-        className="md:hidden text-foreground"
+        className="text-foreground md:hidden"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Toggle menu"
+        aria-expanded={menuOpen}
       >
         {menuOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
@@ -70,14 +81,15 @@ const Header = () => {
               </Link>
             ))}
             <a
-              href="tel:5124025991"
+              href="tel:8177391349"
               className="mt-2 rounded bg-primary px-4 py-3 text-center font-heading text-xs tracking-[0.2em] text-primary-foreground uppercase"
             >
-              Call 512.402.5991
+              Call 817.739.1349
             </a>
           </nav>
         </div>
       )}
+      </div>
     </header>
   );
 };
