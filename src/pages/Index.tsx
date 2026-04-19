@@ -44,7 +44,7 @@ const Index = () => (
             </Link>
           </div>
           <div className="mt-8 grid gap-3 text-sm text-white/85 sm:grid-cols-3">
-            <div className="rounded border border-white/15 bg-white/10 px-4 py-3">Professional guidance led by Katie Barr, CIP, LCDCi, LCDCi</div>
+            <div className="rounded border border-white/15 bg-white/10 px-4 py-3">Professional guidance led by Katie Barr, CIP, LCDCi</div>
             <div className="rounded border border-white/15 bg-white/10 px-4 py-3">Support for intervention, placement, and family boundaries</div>
             <div className="rounded border border-white/15 bg-white/10 px-4 py-3">Confidential help for urgent situations, in Texas and nationwide</div>
           </div>
