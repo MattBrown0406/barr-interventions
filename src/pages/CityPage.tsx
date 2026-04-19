@@ -21,7 +21,7 @@ const CityPage = () => {
     <Layout>
       <Seo
         title={`Drug & Alcohol Intervention in ${city.name}, ${city.stateAbbr} | Barr Interventions`}
-        description={`Professional intervention and sober coaching in ${city.name}, ${city.state}. Katie Barr, CIP, provides compassionate addiction intervention services. Call 817.739.1349.`}
+        description={`Professional intervention and sober coaching in ${city.name}, ${city.state}. Katie Barr, CIP, LCDCi, provides compassionate addiction intervention services. Call 817.739.1349.`}
         path={`/services/${city.slug}`}
         schema={[
           organizationSchema,

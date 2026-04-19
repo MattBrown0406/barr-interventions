@@ -8,7 +8,7 @@ const Contact = () => (
   <Layout>
     <Seo
       title="Contact Barr Interventions & Consulting | 817.739.1349"
-      description="Reach out to Katie Barr, CIP, for professional intervention and recovery services in Texas, Oklahoma, Louisiana, and nationwide. Available 24/7."
+      description="Reach out to Katie Barr, CIP, LCDCi, for professional intervention and recovery services in Texas, Oklahoma, Louisiana, and nationwide. Available 24/7."
       path="/contact"
       schema={[
         organizationSchema,
