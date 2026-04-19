@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
     title: "Codependency and Addiction: When Love Becomes Part of the Problem",
     excerpt: "Is your love for a struggling family member keeping them sick? Learn the signs of codependency in addiction, why it happens, and the steps families can take to break the cycle — without abandoning their loved one.",
     date: "2026-04-18",
-    author: "Katie Barr, CIP",
+    author: "Katie Barr, CIP, LCDCi",
     category: "Family Support",
     readTime: "8 min read",
     content: [
@@ -55,7 +55,7 @@ export const blogPosts: BlogPost[] = [
     title: "When Addiction and Mental Illness Collide: Understanding Dual Diagnosis",
     excerpt: "If your loved one struggles with both addiction and a mental health condition, they may have dual diagnosis. Learn what it means, why it happens, and how families can help.",
     date: "2026-04-14",
-    author: "Katie Barr, CIP",
+    author: "Katie Barr, CIP, LCDCi",
     category: "Family Support",
     readTime: "5 min read",
     content: [
@@ -72,7 +72,7 @@ export const blogPosts: BlogPost[] = [
     title: "What to Expect During a Professional Intervention",
     excerpt: "An intervention can feel overwhelming for families. Understanding the process helps remove fear and empowers loved ones to take the first step toward healing.",
     date: "2026-03-15",
-    author: "Katie Barr, CIP",
+    author: "Katie Barr, CIP, LCDCi",
     category: "Intervention",
     readTime: "7 min read",
     content: [
@@ -91,7 +91,7 @@ export const blogPosts: BlogPost[] = [
     title: "5 Signs a Loved One May Need an Intervention",
     excerpt: "Recognizing when someone has crossed the line from casual use to addiction is not always straightforward. These five warning signs can help families identify when professional help is needed.",
     date: "2026-03-01",
-    author: "Katie Barr, CIP",
+    author: "Katie Barr, CIP, LCDCi",
     category: "Family Support",
     readTime: "5 min read",
     content: [
@@ -110,7 +110,7 @@ export const blogPosts: BlogPost[] = [
     title: "The Role of Sober Coaching in Long-Term Recovery",
     excerpt: "Treatment is the beginning of recovery, not the end. Sober coaching bridges the gap between structured treatment and independent, sustained sobriety.",
     date: "2026-02-15",
-    author: "Katie Barr, CIP",
+    author: "Katie Barr, CIP, LCDCi",
     category: "Recovery",
     readTime: "6 min read",
     content: [
@@ -129,7 +129,7 @@ export const blogPosts: BlogPost[] = [
     title: "How Addiction Affects the Entire Family",
     excerpt: "Addiction is often called a family disease because its effects ripple outward, reshaping relationships, communication patterns, and emotional well-being for everyone involved.",
     date: "2026-02-01",
-    author: "Katie Barr, CIP",
+    author: "Katie Barr, CIP, LCDCi",
     category: "Family Support",
     readTime: "6 min read",
     content: [
@@ -148,7 +148,7 @@ export const blogPosts: BlogPost[] = [
     title: "Understanding K9 Drug Detection: When and Why Families Use This Service",
     excerpt: "K9 drug detection sweeps offer families, businesses, and treatment facilities a discreet and reliable way to identify hidden substances and maintain safe environments.",
     date: "2026-01-20",
-    author: "Katie Barr, CIP",
+    author: "Katie Barr, CIP, LCDCi",
     category: "K9 Detection",
     readTime: "5 min read",
     content: [
@@ -167,7 +167,7 @@ export const blogPosts: BlogPost[] = [
     title: "How to Set Boundaries with a Loved One in Active Addiction",
     excerpt: "Boundaries are not about punishment or control. They are about protecting your own well-being while leaving the door open for your loved one to choose recovery.",
     date: "2026-01-10",
-    author: "Katie Barr, CIP",
+    author: "Katie Barr, CIP, LCDCi",
     category: "Family Support",
     readTime: "6 min read",
     content: [

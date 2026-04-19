@@ -7,7 +7,7 @@ const Blog = () => (
   <Layout>
     <Seo
       title="Addiction Intervention Blog | Barr Interventions & Consulting"
-      description="Expert insights on drug and alcohol intervention, family support, sober coaching, recovery, and treatment planning from Katie Barr, CIP."
+      description="Expert insights on drug and alcohol intervention, family support, sober coaching, recovery, and treatment planning from Katie Barr, CIP, LCDCi."
       path="/blog"
     />
     <section className="py-20 px-6 md:px-12">

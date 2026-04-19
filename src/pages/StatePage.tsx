@@ -534,7 +534,7 @@ const StatePage = () => {
             <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-2">Call or text</p>
             <p className="text-2xl font-heading text-primary tracking-wider">817.739.1349</p>
             <div className="mt-6 space-y-2 text-sm text-muted-foreground">
-              <p>Led by Katie Barr, CIP</p>
+              <p>Led by Katie Barr, CIP, LCDCi</p>
               <p>Intervention, sober coaching, family consulting, transport, and K9 detection</p>
             </div>
           </div>
