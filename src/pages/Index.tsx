@@ -25,7 +25,7 @@ const Index = () => (
             Calm, experienced help when your family cannot keep doing this alone
           </h1>
           <p className="max-w-2xl text-lg leading-relaxed text-white/85">
-            Barr Interventions & Consulting helps families move from chaos and fear to a clear plan. Led by Katie Barr, CIP, we support intervention planning, family systems work, transport, coaching, case management, and K9 detection in Texas and nationwide.
+            Barr Interventions & Consulting helps families move from chaos and fear to a clear plan. Led by Katie Barr, CIP, LCDCi, we support intervention planning, family systems work, transport, coaching, case management, and K9 detection in Texas and nationwide.
           </p>
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a href="tel:8177391349" className="inline-block rounded bg-primary px-8 py-3 font-heading text-sm tracking-widest text-primary-foreground transition-opacity hover:opacity-90">
@@ -44,7 +44,7 @@ const Index = () => (
             </Link>
           </div>
           <div className="mt-8 grid gap-3 text-sm text-white/85 sm:grid-cols-3">
-            <div className="rounded border border-white/15 bg-white/10 px-4 py-3">Professional guidance led by Katie Barr, CIP</div>
+            <div className="rounded border border-white/15 bg-white/10 px-4 py-3">Professional guidance led by Katie Barr, CIP, LCDCi</div>
             <div className="rounded border border-white/15 bg-white/10 px-4 py-3">Support for intervention, placement, and family boundaries</div>
             <div className="rounded border border-white/15 bg-white/10 px-4 py-3">Confidential help for urgent situations, in Texas and nationwide</div>
           </div>

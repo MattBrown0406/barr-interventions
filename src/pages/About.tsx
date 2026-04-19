@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const About = () => (
   <Layout>
     <Seo
-      title="About Katie Barr, CIP | Barr Interventions"
+      title="About Katie Barr, CIP, LCDCi | Barr Interventions"
       description="Meet Katie Barr, CIP and LCDCi, a professional drug and alcohol interventionist with more than a decade of experience helping families in crisis."
       path="/about"
     />
@@ -30,7 +30,7 @@ const About = () => (
         <div>
           <img
             src={katieBarr}
-            alt="Katie Barr, CIP — Founder of Barr Interventions & Consulting"
+            alt="Katie Barr, CIP, LCDCi — Founder of Barr Interventions & Consulting"
             className="rounded shadow-lg w-full max-w-md mx-auto"
             loading="lazy"
             width={800}

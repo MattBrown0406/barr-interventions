@@ -28,14 +28,14 @@ const priorityStateContent: Record<string, PriorityStateContent> = {
   texas: {
     seoTitle: "Texas Drug & Alcohol Intervention Services | Barr Interventions",
     metaDescription:
-      "Texas addiction intervention, sober coaching, family consulting, sober transport, and K9 detection. Call Katie Barr, CIP, at 817.739.1349.",
+      "Texas addiction intervention, sober coaching, family consulting, sober transport, and K9 detection. Call Katie Barr, CIP, LCDCi, at 817.739.1349.",
     heroSubtitle: "Texas-based intervention, transport, and family support services",
     intro:
       "Barr Interventions is based in Texas and works directly with families across Dallas-Fort Worth, Houston, Austin, San Antonio, East Texas, West Texas, and the Hill Country. We help families interrupt active addiction, prepare for treatment, and create a safer, more structured path forward with calm, practical guidance.",
     whyHeading: "Why Texas families call Barr Interventions",
     whyPoints: [
       "Texas-based support with fast coordination for local and statewide cases",
-      "Led by Katie Barr, CIP, with a relationship-centered and ethically grounded approach",
+      "Led by Katie Barr, CIP, LCDCi, with a relationship-centered and ethically grounded approach",
       "Intervention planning, treatment placement support, sober transport, and aftercare coordination",
       "Experience helping families manage high-conflict, high-risk, and crisis-driven situations",
       "K9 substance detection available for Texas homes, properties, and family safety planning",
@@ -304,7 +304,7 @@ const StatePage = () => {
   ];
 
   const pageTitle = customContent?.seoTitle || `Drug & Alcohol Intervention in ${state.name} | Barr Interventions & Consulting`;
-  const metaDescription = customContent?.metaDescription || `${state.description} Call Katie Barr, CIP, at 817.739.1349 for professional intervention, sober coaching, and family support.`;
+  const metaDescription = customContent?.metaDescription || `${state.description} Call Katie Barr, CIP, LCDCi, at 817.739.1349 for professional intervention, sober coaching, and family support.`;
   const intro = customContent?.intro || state.description;
   const whyHeading = customContent?.whyHeading || `Why Choose Barr Interventions in ${state.name}?`;
   const whyPoints = customContent?.whyPoints || [
@@ -534,7 +534,7 @@ const StatePage = () => {
             <p className="text-sm uppercase tracking-[0.2em] text-muted-foreground mb-2">Call or text</p>
             <p className="text-2xl font-heading text-primary tracking-wider">817.739.1349</p>
             <div className="mt-6 space-y-2 text-sm text-muted-foreground">
-              <p>Led by Katie Barr, CIP</p>
+              <p>Led by Katie Barr, CIP, LCDCi</p>
               <p>Intervention, sober coaching, family consulting, transport, and K9 detection</p>
             </div>
           </div>
